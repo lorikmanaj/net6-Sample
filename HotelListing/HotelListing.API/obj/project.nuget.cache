@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "t2Sm3wxoLCTNcbRk+1jn/uVKCQqz/p7jtEBzJkbSMguXXDFbVhAYnm04O/KuZkOpzzh4r16GDVlcqGx5g4om7g==",
+  "success": true,
+  "projectFilePath": "D:\\Lori\\Practice\\net6\\HotelListing\\HotelListing.API\\HotelListing.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lorik\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\lorik\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\lorik\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\lorik\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\lorik\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\lorik\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
