@@ -1,0 +1,5 @@
+2022-10-18 00:10:32.440 +02:00 [INF] Now listening on: https://localhost:7227
+2022-10-18 00:10:32.481 +02:00 [INF] Now listening on: http://localhost:5227
+2022-10-18 00:10:32.486 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-18 00:10:32.487 +02:00 [INF] Hosting environment: Development
+2022-10-18 00:10:32.488 +02:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
