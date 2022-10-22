@@ -26,24 +26,29 @@ namespace HotelListing.API.Controllers
 
         // GET: api/Countries
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
+        public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
             var countries = await _context.Countries.ToListAsync();
+
+            var records = _mapper.Map<List<GetCountryDto>>(countries);
+
             return Ok(countries);
         }
 
         // GET: api/Countries/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Country>> GetCountry(int id)
+        public async Task<ActionResult<GetCountryDetailsDto>> GetCountry(int id)
         {
-            var country = await _context.Countries.FindAsync(id);
+            var country = await _context.Countries.Include(h => h.Hotels).FirstOrDefaultAsync(c => c.CountryId == id);
 
             if (country == null)
             {
                 return NotFound();
             }
 
-            return country;
+            var countryDto = _mapper.Map<GetCountryDetailsDto>(country);
+
+            return Ok(countryDto);
         }
 
         // PUT: api/Countries/5
@@ -82,11 +87,11 @@ namespace HotelListing.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountryDto)
         {
-            var countryOld = new Country
-            {
-                CountryName = createCountryDto.Name,
-                ShortName = createCountryDto.CountryCode
-            };
+            //var countryOld = new Country
+            //{
+            //    CountryName = createCountryDto.CountryName,
+            //    ShortName = createCountryDto.ShortName
+            //};
 
             var country = _mapper.Map<Country>(createCountryDto);
 
