@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListing.API.Data;
 using HotelListing.API.Models.Country;
@@ -86,17 +81,9 @@ namespace HotelListing.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountryDto)
         {
-            //var countryOld = new Country
-            //{
-            //    CountryName = createCountryDto.CountryName,
-            //    ShortName = createCountryDto.ShortName
-            //};
-
             var country = _mapper.Map<Country>(createCountryDto);
 
             await _countriesRepository.AddAsync(country);
-            //await _context.Countries.Add(country);
-            //await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCountry", new { id = country.CountryId }, country);
         }
