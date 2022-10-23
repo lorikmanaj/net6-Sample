@@ -28,7 +28,7 @@ namespace HotelListing.API.Controllers
 
             var records = _mapper.Map<List<GetCountryDto>>(countries);
 
-            return Ok(countries);
+            return Ok(records);
         }
 
         // GET: api/Countries/5
