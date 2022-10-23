@@ -94,7 +94,7 @@ namespace HotelListing.API.Controllers
 
             var country = _mapper.Map<Country>(createCountryDto);
 
-            _context.Countries.Add(country);
+            await _context.Countries.Add(country);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("GetCountry", new { id = country.CountryId }, country);
