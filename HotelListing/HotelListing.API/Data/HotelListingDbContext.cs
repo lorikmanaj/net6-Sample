@@ -19,9 +19,7 @@ namespace HotelListing.API.Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
-
             modelBuilder.ApplyConfiguration(new CountryConfiguration());
-
             modelBuilder.ApplyConfiguration(new HotelConfiguration());
         }
     }
