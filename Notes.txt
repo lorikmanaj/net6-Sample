@@ -1,0 +1,12 @@
+Network level auth:
+IP Whitelist
+IP Blacklist
+
+Basic Auth:
+Auth with each call to API
+
+Api Key Access:
+Client gets API Key
+
+JWT:
+Json Web Tokens
