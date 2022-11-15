@@ -8,3 +8,8 @@
 2022-11-15 20:31:50.777 +01:00 [INF] Application started. Press Ctrl+C to shut down.
 2022-11-15 20:31:50.777 +01:00 [INF] Hosting environment: Development
 2022-11-15 20:31:50.778 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-15 22:01:32.999 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-15 22:01:33.034 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-15 22:01:33.039 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-15 22:01:33.039 +01:00 [INF] Hosting environment: Development
+2022-11-15 22:01:33.040 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
