@@ -1,0 +1,100 @@
+2022-11-16 20:04:52.654 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:04:52.693 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:04:52.698 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:04:52.699 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:04:52.699 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:09:09.449 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:09:09.485 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:09:09.490 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:09:09.491 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:09:09.491 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:09:18.590 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No authenticationScheme was specified, and there was no DefaultChallengeScheme found. The default schemes can be set using either AddAuthentication(string defaultScheme) or AddAuthentication(Action<AuthenticationOptions> configureOptions).
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.ChallengeAsync(HttpContext context, String scheme, AuthenticationProperties properties)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 20:10:06.223 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:10:06.259 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:10:06.264 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:10:06.265 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:10:06.265 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:13:21.166 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:13:21.205 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:13:21.210 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:13:21.211 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:13:21.212 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:23:32.320 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:23:32.360 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:23:32.365 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:23:32.365 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:23:32.366 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:25:48.670 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'HotelListing.API.Data.HotelListingDbContext'.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2022-11-16 20:25:48.774 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at HotelListing.API.Repository.GenericRepository`1.GetAsync(Nullable`1 id) in D:\Lori\Practice\net6\HotelListing\HotelListing.API\Repository\GenericRepository.cs:line 47
+   at HotelListing.API.Repository.GenericRepository`1.DeleteAsync(Int32 id) in D:\Lori\Practice\net6\HotelListing\HotelListing.API\Repository\GenericRepository.cs:line 25
+   at HotelListing.API.Controllers.CountriesController.DeleteCountry(Int32 id) in D:\Lori\Practice\net6\HotelListing\HotelListing.API\Controllers\CountriesController.cs:line 103
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 20:30:24.120 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:30:24.175 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:30:24.181 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:30:24.182 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:30:24.183 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-16 20:32:10.012 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Role ADMIN does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at HotelListing.API.Services.AuthManager.RegisterAdmin(ApiUserDto userDto) in D:\Lori\Practice\net6\HotelListing\HotelListing.API\Services\AuthManager.cs:line 66
+   at HotelListing.API.Controllers.AccountController.RegisterAdmin(ApiUserDto apiUserDto) in D:\Lori\Practice\net6\HotelListing\HotelListing.API\Controllers\AccountController.cs:line 50
+   at lambda_method179(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-11-16 20:33:10.015 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-16 20:33:10.062 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-16 20:33:10.070 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-16 20:33:10.071 +01:00 [INF] Hosting environment: Development
+2022-11-16 20:33:10.072 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
