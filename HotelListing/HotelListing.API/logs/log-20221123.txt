@@ -1,0 +1,18 @@
+2022-11-23 22:38:04.629 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-23 22:38:04.669 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-23 22:38:04.674 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 22:38:04.675 +01:00 [INF] Hosting environment: Development
+2022-11-23 22:38:04.675 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-23 22:41:57.057 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-23 22:41:57.097 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-23 22:41:57.103 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 22:41:57.103 +01:00 [INF] Hosting environment: Development
+2022-11-23 22:41:57.104 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-23 22:46:53.414 +01:00 [INF] Now listening on: https://localhost:7227
+2022-11-23 22:46:53.452 +01:00 [INF] Now listening on: http://localhost:5227
+2022-11-23 22:46:53.457 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-11-23 22:46:53.458 +01:00 [INF] Hosting environment: Development
+2022-11-23 22:46:53.458 +01:00 [INF] Content root path: D:\Lori\Practice\net6\HotelListing\HotelListing.API\
+2022-11-23 22:50:01.620 +01:00 [INF] Login Attempt for user@example.com
+2022-11-23 22:50:01.623 +01:00 [INF] Looking for user with email user@example.com
+2022-11-23 22:50:04.651 +01:00 [INF] Token generated for user with email user@example.com | Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiYmRhYWRmYmQtNGE4YS00OTM2LTlhOWMtNThhNjM3N2JkMGRjIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZGE3Nzg2MmEtOTgwMS00MzE0LTg5MjMtNmFjYTMwYWQ2NDA5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTY2OTI0MDgwNCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXN0aW5nQVBJQ2xpZW50In0.z3PtdzIYQ1Q8bvubd2rbSsE2IgTesnvB3k02DO28qzA.
